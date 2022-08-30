@@ -2,7 +2,7 @@ import {LoaderFunction} from "@remix-run/cloudflare";
 import {useLoaderData} from "@remix-run/react";
 
 export const loader: LoaderFunction = async () => {
-  return fetch(`http://api.saddlebagexchange.com:5000/api/scan`, {
+  return fetch(`http://api.saddlebagexchange.com/api/scan`, {
     'method': 'POST', headers: {
       "Content-Type": "application/json", "User-Agent": 'Saddlebag/1.0'
     }, body: JSON.stringify({
